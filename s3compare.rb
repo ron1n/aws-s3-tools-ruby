@@ -182,4 +182,3 @@ end
 
 # Run the script
 compare_and_update(s3, bucket_name, object_key, local_file_path, metadata_key)
-
