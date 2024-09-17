@@ -1,8 +1,8 @@
 # aws-s3-tools-ruby
 
- This script is an example of how you could compare local files with remote ones in S3
+ This script is an example of how you could compare local files with remote ones in S3.
  While on it's face this might seem trivial, it actually takes a few extra steps
- to avoid downloading the object every time you would need to compare local and remote data
+ to avoid downloading the object every time you would need to compare local and remote data.
  In this example we solve this by attaching a special metadata sha512 of the object plaintext
  to the object. Then we run an API call to inspect the digest of the remote object instead of
  downloading the entire object. We could do this on a cron, say every 30 minutes, and enforce
